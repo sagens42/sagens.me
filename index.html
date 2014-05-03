@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Sergei Zholudev">
+		<meta name="author" content="Sergei Zholudev">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sergei Zholudev</title>
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body class="credit">
+		<div class="container">
+			<p class="about">
+				<a href="https://github.com/sagens42/">JavaScript</a> 
+				<span>•</span> 
+				<a href="https://npmjs.org/~sagens">Node.js</a> 
+			<div class="profile">
+				<img src="http://www.gravatar.com/avatar/9a07613aa42449ba95ba4529daf235e4.png?s=300" width="150" height="150" alt="Sergei Zholudev">
+				<div class="name" itemprop="name"><span>Sergei</span> <span>Zholudev</span></div>
+			</div>
+			<ul class="links">
+				<li><a class="email">Email</a></li>
+				<li><a href="http://twitter.com/sagens42">Twitter</a></li>
+				<li><a href="https://github.com/sagens42">GitHub</a></li>
+			</ul>
+		</div>
+		<div class="container more">
+
+		</div>
+	</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script>
+		$('.email').attr('href', 'mailto:' + 'zholudev' + '.s' + '@' + 'gmail' + '.' + 'com');
+
+		$('.profile img').on('mouseover mouseout', function (e) {
+			$(this).toggleClass('animated tada', e.type === 'mouseover');
+		});
+
+		setTimeout(function () {
+			$('.credit').addClass('activate');
+		}, 1000);
+	</script>
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-39488509-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</html>
